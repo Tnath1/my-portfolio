@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-blue-400 selection:text-blue-950">
-      <div className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      <div className="relative bg-black-100 flex justify-center items-center flex-col h-[100vh] mx-auto sm:px-10 px-5">
         <div className="max-w-7xl w-full">
           <Hero />
         </div>
