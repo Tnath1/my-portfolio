@@ -1,14 +1,13 @@
-// import React from "react";
+
 import { useNavigate } from "react-router-dom";
 import Loading from "./Loading";
 import  {  useState } from "react";
-
 import logo from "../assets/mylogo.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-// import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const [loading, setLoading] = useState<boolean>(false);
