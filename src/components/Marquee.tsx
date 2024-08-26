@@ -40,19 +40,18 @@ const Marquee: React.FC = () => {
     //     <img src={myPicture} alt="my picture" />
     //   </div>
     // </div>
-    <div >
+    <div>
       <div className="flex justify-between mt-4 text-[16px] md:text-2xl ">
         <p>02/05</p>
         <p>ABOUT</p>
         <div className="flex gap-1">
-          
           <div className="cursor-pointer">EMAIL </div>
           <span>/</span>
           <div className="cursor-pointer">LINDEDIN</div>
           <span>/</span>
           <div className="cursor-pointer">TWITTER</div>
           <span>/</span>
-          <div className="cursor-pointer">INSTAGRAM</div>
+          <div className="cursor-pointer">GITHUB</div>
         </div>
       </div>
 
@@ -85,15 +84,13 @@ const Marquee: React.FC = () => {
       </div>
       <div className="flex flex-col justify-between mb-8 mt-8 flex-wrap gap-6 sm:flex-row mr-10 ml-10">
         <p className="uppercase text-[13px] md:text-[20px] sm:text-[18px]  ">
-          <span className="ml-10"> hi there,</span> my name is Arome(Jonathan),
-          I am a <br />
+          <span className="ml-10"> hi there! 👋🏽,</span> my name is Arome, I am a<br/>
           solution-driven Software Enginer.
-          <br /> I craft digital solutions with precision and creativity, <br />{" "}
+         I craft digital  <br />  solutions with precision and creativity, <br />{" "}
           blending clean code with innovative design.
         </p>
 
         <p className="uppercase  flex justify-center items-center flex-col cursor-pointer rounded-full  w-20 h-20 p-[3rem] border border-white">
-      
           learn <br /> more
         </p>
       </div>

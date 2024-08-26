@@ -6,17 +6,14 @@ import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <div>
+    <div className="flex justify-center items-center ">
       <div className="pb-20 pt-36">
         <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+          className="-top-40 -left-10   md:-left-32 md:-top-20 h-screen"
           fill="white"
         />
-        <Spotlight
-          className="top-10 left-full h-[80vh] w-[50vw]"
-          fill="purple"
-        />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
+        <Spotlight className="top-10 " fill="purple" />
+        <Spotlight className="top-28  " fill="blue" />
       </div>
 
       {/* <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
@@ -24,18 +21,18 @@ const Hero = () => {
 
 </p> 
 */}
-      <div className="absolute top-0 max-w-6xl">
+      <div className="absolute  max-w-[1300px] top-0">
         <Navbar />
 
         <div className=" flex justify-center">
-          <div className="  max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-            <h2 className="uppercase tracking-widest text-2xl text-xs text-center text-yellow-100 max-w-80">
+          <div className="   flex flex-col items-center justify-center">
+            <h2 className="uppercase tracking-widest  text-center text-yellow-100 max-w-80">
               Arome Ukpoju - Software Enginer
             </h2>
           </div>
         </div>
         <TextGenerateEffect
-          className="text-center mb-[100px] text-[40px] md:text-5xl lg:text-6xl text-white"
+          className="text-center mb-[100px] text-[40px] md:text-5xl lg:text-10xl text-white"
           words="< Transforming Concepts and Ideas into Seamless Experiences. />"
         />
 
