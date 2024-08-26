@@ -1,5 +1,4 @@
 import Navbar from "./Navbar";
-// import { forwardRef } from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
