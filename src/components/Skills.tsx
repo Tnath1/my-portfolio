@@ -17,7 +17,7 @@ const Skills = () => {
           STACK &lt; TOOLS / LANGUAGES / FRAMEWORKS / LIBRARIES &gt;
         </h1>
       </div>
-      <div className="flex flex-wrap items-center mb-[8rem] justify-center gap-4">
+      <div className="flex flex-wrap max-w-[1300px] mx-auto items-center mb-[8rem] justify-center gap-4">
         <div className="rounded-2xl border-4  mt-8 border-neutral-800 p-4">
           <RiReactjsLine className=" text-7xl text-cyan-400" />
         </div>
