@@ -15,17 +15,15 @@ const Navbar = () => {
 
   // Handle navigation with loading effect
   const handleNavigation = (path: string) => {
-    setLoading(true); // Set loading to true
-
-    // Simulate a loading delay
+    setLoading(true); 
     setTimeout(() => {
-      setLoading(false); // Set loading to false
-      navigate(path); // Navigate to the desired path
-    }, 2000); // Adjust the timeout as needed
+      setLoading(false); 
+      navigate(path); 
+    }, 2000); 
   };
 
   if (loading) {
-    return <Loading />; // Show the loading component
+    return <Loading />; 
   }
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
@@ -37,7 +35,7 @@ const Navbar = () => {
           alt="logo"
         />
 
-        {/* <h2 className="">AU</h2> */}
+      
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl ">
         <FaLinkedin className="cursor-pointer" />

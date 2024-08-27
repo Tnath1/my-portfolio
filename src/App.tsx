@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Loading from "./components/Loading";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
+import "./app.css"
 
 const App = () => {
   const [loading, setLoading] = useState<boolean>(true);

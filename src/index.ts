@@ -1,13 +1,15 @@
-import project1 from "../assets/me-b&w3.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+// import project1 from "../assets/me-b&w3.jpg";
+import project2 from "./assets/real-estate.png";
+// import project3 from "../assets/projects/project-3.jpg";
+// import project4 from "../assets/projects/project-4.jpg";
 
 type Project = {
   title: string;
   image: string;
   description: string;
   technologies: string[];
+  liveUrl: string;
+  repoUrl:string;
 };
 
 type Experience = {
@@ -62,10 +64,12 @@ export const EXPERIENCES: Experience[] = [
 export const PROJECTS: Project[] = [
   {
     title: "E-Commerce Website",
-    image: project1,
+    image: project2,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    liveUrl: "https://plink-ui.vercel.app/",
+    repoUrl: "https://github.com/Tnath1/plink-ui",
   },
   {
     title: "Task Management App",
@@ -73,25 +77,31 @@ export const PROJECTS: Project[] = [
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
     technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    liveUrl: "https://example-taskapp.com",
+    repoUrl: "https://github.com/Tnath1/plink-ui",
   },
   {
     title: "Portfolio Website",
-    image: project3,
+    image: project2,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    liveUrl: "https://example-taskapp.com",
+    repoUrl: "https://github.com/Tnath1/plink-ui",
   },
   {
     title: "Blogging Platform",
-    image: project4,
+    image: project2,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    liveUrl: "https://example-taskapp.com",
+    repoUrl: "https://github.com/Tnath1/plink-ui",
   },
 ];
 
 export const CONTACT: Contact = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: " No 3, Independence Layout Enugu, Enugu State, Nigeria ",
+  phoneNo: "+234 810 5063 244 ",
+  email: "aromejonathanu@gmail.com",
 };

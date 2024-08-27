@@ -7,13 +7,14 @@ import { LiaCss3Alt } from "react-icons/lia";
 import { RiReactjsLine } from "react-icons/ri";
 import { SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { TbBrandJavascript, TbBrandNextjs } from "react-icons/tb";
+import "../app.css"
 
 
 const Skills = () => {
   return (
     <div>
-      <div className="border-b mt-4 flex  justify-center items-center  border-neutral-800 pb-24">
-        <h1 className="font-bold text-2xl ">
+      <div className="border-b mt-4 flex flex-col justify-center items-center  border-neutral-800 pb-24">
+        <h1 className="font-bold skills-h-size ">
           STACK &lt; TOOLS / LANGUAGES / FRAMEWORKS / LIBRARIES &gt;
         </h1>
       </div>

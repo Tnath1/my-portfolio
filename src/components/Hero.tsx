@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
+import "../app.css"
 
 interface ComponentAProps {
   sectionRef: React.RefObject<HTMLDivElement>;
@@ -30,14 +31,18 @@ const Hero: React.FC<ComponentAProps> = ({ sectionRef }) => {
         <div className=" flex justify-center">
           <div className="   flex flex-col items-center justify-center">
             <h2 className="uppercase tracking-widest text-xs   text-center text-yellow-100 max-w-80">
-              Arome Ukpoju - Software Enginer
+              Arome Ukpoju - Software Engineer
             </h2>
           </div>
         </div>
         <TextGenerateEffect
-          className="text-center px-3 mb-[100px] text-[30px] md:text-5xl lg:text-[5rem] text-white"
+          className="text-center px-3 mb-[100px]  texts-responsive text-white"
           words="< Transforming Concepts and Ideas into Seamless Experiences. />"
         />
+        {/* <TextGenerateEffect
+          className="text-center px-3 mb-[100px] text-[30px] md:text-5xl lg:text-[5rem] text-white"
+          words="< Transforming Concepts and Ideas into Seamless Experiences. />"
+        /> */}
 
         <div className="flex justify-center items-center">
           <MdOutlineKeyboardDoubleArrowDown

@@ -1,4 +1,3 @@
-// import { forwardRef } from "react";
 import myPicture from "../assets/me-b&w.jpg";
 import { useNavigate } from "react-router-dom";
 import Loading from "./Loading";
@@ -32,24 +31,24 @@ const Marquee: React.FC<ComponentAProps> = ({ sectionRef }) => {
     }
   }, []);
 
-  // Handle navigation with loading effect
+  
   const handleNavigation = (path: string) => {
-    setLoading(true); // Set loading to true
+    setLoading(true); 
 
     // Simulate a loading delay
     setTimeout(() => {
-      setLoading(false); // Set loading to false
-      navigate(path); // Navigate to the desired path
-    }, 2000); // Adjust the timeout as needed
+      setLoading(false); 
+      navigate(path); 
+    }, 2000); 
   };
 
   if (loading) {
-    return <Loading />; // Show the loading component
+    return <Loading />; 
   }
 
   return (
     <div>
-      <div className="flex justify-between mt-4 text-[16px] md:text-2xl ">
+      <div className="flex justify-between mt-4 gen-h-size ">
         <p ref={sectionRef}>02/05</p>
         <p>ABOUT</p>
         <div className="flex gap-1">
@@ -89,26 +88,16 @@ const Marquee: React.FC<ComponentAProps> = ({ sectionRef }) => {
         />
       </div>
       <div className="flex flex-col justify-between mb-8 mt-8 flex-wrap gap-6 sm:flex-row mr-10 ml-10">
-        <p className="uppercase text-[13px] md:text-[20px] sm:text-[18px]  ">
+        <p className="uppercase gen-h-size  ">
           <span className="ml-10"> hi there! 👋🏽,</span> my name is Arome, I am a
           <br />
           solution-driven Software Enginer. I craft digital <br /> solutions
           with precision and creativity, <br /> blending clean code with
           innovative design.
         </p>
-        {/* 
-        <Link to="/about" className="text-white hover:text-gray-300">
-    
-          <p className="uppercase  flex justify-center items-center flex-col cursor-pointer rounded-full  w-20 h-20 p-[3rem] border border-white">
-            learn <br /> more
-          </p>
-        </Link> */}
-
-        {/* <div></div> */}
-
         <p
           onClick={() => handleNavigation("/about")}
-          className="uppercase  flex justify-center items-center flex-col cursor-pointer rounded-full  w-20 h-20 p-[3rem] border border-white"
+          className="uppercase lg:text-  flex justify-center items-center flex-col cursor-pointer rounded-full  w-20 h-20 p-[3rem] border border-white"
         >
           learn <br /> more
         </p>
