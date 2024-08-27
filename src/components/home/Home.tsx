@@ -1,3 +1,4 @@
+import Contact from "../Contact";
 import Hero from "../Hero";
 import Marquee from "../Marquee";
 import Projects from "../Projects";
@@ -27,6 +28,7 @@ const Home = () => {
         {/* <hr className="border-t-4 border-dashed border-gray-400 " /> */}
 
         <Projects />
+        <Contact/>
       </div>
     </div>
   );

@@ -1,0 +1,21 @@
+.texts-responsive {
+  font-weight: 900;
+  /* font-family: "Rye", serif; */
+  font-size: clamp(2.5rem, 8vw, 5rem);
+}
+
+.skills-h-size {
+  /* font-size: clamp(2rem, 8vw, 1rem); */
+  font-size: clamp(0.6rem, 2.5vw, 2rem);
+  max-width: 100%;
+}
+.gen-h-size {
+  /* font-size: clamp(2rem, 8vw, 1rem); */
+  font-size: clamp(0.6rem, 2.5vw, 1.2rem);
+  max-width: 100%;
+}
+.product-size {
+  /* font-size: clamp(2rem, 8vw, 1rem); */
+  font-size: clamp(0.3rem, 2.5vw, 1rem);
+  max-width: 100%;
+}
