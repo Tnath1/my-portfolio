@@ -2,7 +2,8 @@ import Navbar from "./Navbar";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
-import "../app.css"
+import "../app.css";
+
 
 interface ComponentAProps {
   sectionRef: React.RefObject<HTMLDivElement>;
@@ -50,7 +51,7 @@ const Hero: React.FC<ComponentAProps> = ({ sectionRef }) => {
             className="  border-2 p-3 rounded-full mt-2 border-white flex-col w-[72px] h-[72px]  cursor-pointer"
           />
         </div>
-        <h5 className=" mt-[5rem] ml-[2rem] text-2xl">01/05</h5>
+        <h5 className=" mt-[5rem] ml-[2rem] gen-h-size ">01/05</h5>
       </div>
     </div>
   );
