@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Loading from "./Loading";
 import React, { useEffect, useRef, useState } from "react";
 
+
 interface ComponentAProps {
   sectionRef: React.RefObject<HTMLDivElement>;
 }
