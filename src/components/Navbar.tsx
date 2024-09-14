@@ -24,7 +24,7 @@ const Navbar = () => {
     return <Loading />;
   }
   return (
-    <nav className="mb-20 flex items-center justify-between py-6">
+    <nav className="mb-20 sm:mb-20 flex items-center justify-between py-6">
       <div className=" flex flex-shrink-0 items-center">
         <img
           onClick={() => handleNavigation("/")}

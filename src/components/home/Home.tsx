@@ -3,16 +3,24 @@ import Hero from "../Hero";
 import Marquee from "../Marquee";
 import Projects from "../Projects";
 import Skills from "../Skills";
-import { useRef } from "react";
+import { useRef, RefObject } from "react";
 
 const Home = () => {
-  const sectionRef = useRef<HTMLDivElement | null>(null);
+  // const projectSectionRef = useRef<HTMLDivElement | null>(null);
+  const projectSectionRef: RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
+  const marqueeSectionRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollToMarquee = () => {
+    if (marqueeSectionRef.current) {
+      marqueeSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className=" text-neutral-300 antialiased selection:bg-blue-400 selection:text-blue-950 ">
-      <div className="relative  bg-black-100 flex justify-center items-center overflow-hidden flex-col h-screen mx-auto sm:px-10 px-5">
+      <div className="relative   bg-black-100 flex justify-center items-center overflow-hidden flex-col h-screen mx-auto sm:px-10 px-5">
         <div className=" max-w-7xl w-full ">
-          <Hero sectionRef={sectionRef} />
+          <Hero scrollToSection={scrollToMarquee} />
         </div>
       </div>
       <div className="flixed top-0 -z-10 h-full w-full">
@@ -20,15 +28,17 @@ const Home = () => {
       </div>
       <div className="  px-8 bg-black">
         <hr className="border-t-4  border-dashed border-gray-400 " />
-
-        {/* <Navbar /> */}
-        <Marquee sectionRef={sectionRef} />
+        <div ref={marqueeSectionRef}>
+          <Marquee
+            scrollToSection={() =>
+              projectSectionRef.current?.scrollIntoView({ behavior: "smooth" })
+            }
+          />
+        </div>{" "}
         <hr className="border-t-4 border-dashed border-gray-400 " />
         <Skills />
-        {/* <hr className="border-t-4 border-dashed border-gray-400 " /> */}
-
-        <Projects />
-        <Contact/>
+        <Projects ref={projectSectionRef} />
+        <Contact />
       </div>
     </div>
   );
