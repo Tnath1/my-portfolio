@@ -63,15 +63,15 @@ export const EXPERIENCES: Experience[] = [
 ];
 
 export const PROJECTS: Project[] = [
-  {
-    title: "Real-Estate App",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "express.js"],
-    liveUrl: "https://plink-ui.vercel.app/",
-    repoUrl: "https://github.com/Tnath1/plink-ui",
-  },
+  // {
+  //   title: "Real-Estate App",
+  //   image: project1,
+  //   description:
+  //     "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+  //   technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "express.js"],
+  //   liveUrl: "https://plink-ui.vercel.app/",
+  //   repoUrl: "https://github.com/Tnath1/plink-ui",
+  // },
   {
     title: "Ecommerce website",
     image: project2,

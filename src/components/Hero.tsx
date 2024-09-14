@@ -4,29 +4,26 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import "../app.css";
 
+// interface ComponentAProps {
+//   sectionRef: React.RefObject<HTMLDivElement>;
+// }
 
-interface ComponentAProps {
-  sectionRef: React.RefObject<HTMLDivElement>;
+interface HeroProps {
+  scrollToSection: () => void; // Scroll to Marquee section
 }
 
-const Hero: React.FC<ComponentAProps> = ({ sectionRef }) => {
-  const scrollToSection = () => {
-    if (sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
+const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
   return (
-    <div className="flex justify-center items-center ">
+    <div className="flex justify-center items-center  ">
       <div className="pb-20 pt-36">
         <Spotlight
           className="-top-40 -left-10   md:-left-32 md:-top-20 h-screen"
           fill="white"
         />
-        <Spotlight className="top-10 " fill="purple" />
-        <Spotlight className="top-28  " fill="blue" />
+        <Spotlight className="top-10  " fill="purple" />
+        <Spotlight className="top-28   " fill="blue" />
       </div>
-      <div className="absolute  max-w-[1300px] top-0">
+      <div className="absolute   max-w-[1300px] top-0">
         <Navbar />
 
         <div className=" flex justify-center">
@@ -37,7 +34,7 @@ const Hero: React.FC<ComponentAProps> = ({ sectionRef }) => {
           </div>
         </div>
         <TextGenerateEffect
-          className="text-center px-3 mb-[100px]  texts-responsive text-white"
+          className="text-center px-3 mb-[100px] sm:mb-[100px] texts-responsive text-white"
           words="< Transforming Concepts and Ideas into Seamless Experiences. />"
         />
         {/* <TextGenerateEffect
@@ -51,7 +48,7 @@ const Hero: React.FC<ComponentAProps> = ({ sectionRef }) => {
             className="  border-2 p-3 rounded-full mt-2 border-white flex-col w-[72px] h-[72px]  cursor-pointer"
           />
         </div>
-        <h5 className=" mt-[5rem] ml-[2rem] gen-h-size ">01/05</h5>
+        <h5 className="   mt-[5rem] ml-[2rem] gen-h-size ">01/05</h5>
       </div>
     </div>
   );

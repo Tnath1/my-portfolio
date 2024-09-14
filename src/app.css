@@ -19,3 +19,54 @@
   font-size: clamp(0.3rem, 2.5vw, 1rem);
   max-width: 100%;
 }
+
+.caret-animation {
+  background-color: rgba(116, 127, 224, .65);
+  animation: caret 1s steps(1) infinite;
+}
+
+
+
+.hero-title {
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+  /* font-size: 4.5em; */
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  color: #747fe0;
+}
+
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing-effect {
+  overflow: hidden;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 5s steps(30, end) 0.5s forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(221, 212, 212);
+  }
+}
